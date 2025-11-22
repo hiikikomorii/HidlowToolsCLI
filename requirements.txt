@@ -1,0 +1,8 @@
+requests
+colorama
+phonenumbers
+tqdm
+faker
+pynput
+qrcode
+flask
