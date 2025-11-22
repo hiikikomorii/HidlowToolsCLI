@@ -50,6 +50,7 @@ All personal data shown in the screenshots are fictitious.
 
 **Поместите .json файл в ту же директорию, что и ``main.py``, 
 затем запустите функцию и введите название чата в консоль. После конвертации в той же директории появится ``chat_export.txt``.**
+
 ![gptchc.png](assets/gptchc.png)
 
 ## English
@@ -59,16 +60,19 @@ All personal data shown in the screenshots are fictitious.
 **1. ``Number`` - a function that allows you to get information about a mobile phone number.
 Uses one of the [htmlweb APIs](https://htmlweb.ru)
 and outputs more than 28 lines of information.**
+
 ![numberworkpng](assets/numberwork.png)
 
 **2. ``Lat/Lon`` - a function that allows you to get information about coordinates by latitude (_lat_) and longitude (_lon_).
 Uses the [OpenStreetMap API](https://nominatim.openstreetmap.org)
 and outputs more than 18 lines of information.**
+
 ![latwork.png](assets/latwork.png)
 
 **3. ``IP`` - a function that allows you to get information about an IP address.
 Uses the [whois API](https://ipwhois.app)
 and outputs more than 22 lines of information.**
+
 ![ipwork.png](assets/ipwork.png)
 
 **4. ``QRcode`` - a function that allows you to create a QR code in ``.png`` format.
@@ -97,5 +101,7 @@ The script converts this file to .txt for easier reading.**
 
 **Place the .json file in the same directory as ``main.py``,
 then run the function and enter the chat name in the console. After conversion, ``chat_export.txt`` will appear in the same directory.**
+
 ![gptchc.png](assets/gptchc.png)
+
 
