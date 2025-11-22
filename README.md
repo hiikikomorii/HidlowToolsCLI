@@ -11,14 +11,17 @@ All personal data shown in the screenshots are fictitious.
 
 **1. ``Number`` - функция, с помощью которой вы можете узнать информацию о мобильном номере телефона.
 Использует один из [htmlweb API](https://htmlweb.ru) и выводит более 28 строк с информацией.**
+
 ![numberworkpng](assets/numberwork.png)
 
 **2. ``Lat/Lon`` - функция, с помощью которой вы можете узнать информацию о координатах по долготе(_lat_) и широте(_lon_).  
 Использует [openstreetmap API](https://nominatim.openstreetmap.org) и выводит более 18 строк с информацией**
+
 ![latwork.png](assets/latwork.png)
 
 **3. ``IP`` - функция, с помощью которой вы можете узнать информацию о IP.  
 использует [whois API](https://ipwhois.app) и выводит более 22 строк с информацией**
+
 ![ipwork.png](assets/ipwork.png)
 
 **4. ``QRcode`` - функция, с помощью которой вы можете создавать QRcode в формате ``.png``.  
@@ -95,3 +98,4 @@ The script converts this file to .txt for easier reading.**
 **Place the .json file in the same directory as ``main.py``,
 then run the function and enter the chat name in the console. After conversion, ``chat_export.txt`` will appear in the same directory.**
 ![gptchc.png](assets/gptchc.png)
+
