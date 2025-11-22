@@ -107,16 +107,10 @@ def sysinfo_func():
     node_info = platform.node()
     os_info = platform.platform()
     mach_info = platform.machine()
-    python_info = platform.python_version
-    python_comp = platform.python_compiler
-    python_build = platform.python_build()
 
     typewriter_info(f"{Fore.BLUE}Node: {node_info}", 0.02)
     typewriter_info(f"{Fore.BLUE}OS: {os_info}", 0.02)
     typewriter_info(f"{Fore.BLUE}Machine: {mach_info}", 0.02)
-    typewriter_info(f"{Fore.BLUE}Python: {python_info}", 0.02)
-    typewriter_info(f"{Fore.BLUE}Py build: {python_build}", 0.02)
-    typewriter_info(f"{Fore.BLUE}compiler: {python_comp}", 0.02)
     time.sleep(0.5)
     clear_cmd_func()
 
