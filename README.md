@@ -1,7 +1,8 @@
-# Hidlow Tools
+# Hidlow Tool
 ![main.png](assets/main.png)
+#### [Russian Version](#russian) | [English Version](#english)
 ****
-## Russian Version
+## Russian
 
 **Проект HidlowTools - это небольшой сборник утилит
 в которых имеется более 13 функций**
@@ -13,4 +14,4 @@
 **2. ``IP`` -
 использует [whois api](https://ipwhois.app/json/) и выводит**
 
-
+## English
