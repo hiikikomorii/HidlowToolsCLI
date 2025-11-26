@@ -1,4 +1,4 @@
-# Hidlow Tool
+# Hidlow Tools
 ![main.png](assets/main.png)
 #### [Russian Version](#russian) | [English Version](#english)
 Все персональные данные, показанные на скриншотах, являются вымышленными.  
@@ -103,5 +103,6 @@ The script converts this file to .txt for easier reading.**
 then run the function and enter the chat name in the console. After conversion, ``chat_export.txt`` will appear in the same directory.**
 
 ![gptchc.png](assets/gptchc.png)
+
 
 
