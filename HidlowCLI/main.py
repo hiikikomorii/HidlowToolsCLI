@@ -102,7 +102,7 @@ def faker_choice():
 
 
 def exit_adapter():
-    exit()
+    sys.exit()
 
 def prepare_clear():
     clear_cmd_func()

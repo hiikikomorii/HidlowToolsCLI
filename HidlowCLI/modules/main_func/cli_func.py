@@ -460,16 +460,28 @@ def qrcode_mk():
 # flask server
 def flask_server_open():
     try:
-        flask_path = r"modules\apiserver\setupserver.bat"
-        os.startfile(flask_path)
+        script_dir = Path(__file__).parent / "modules" / "apiserver"
+        script_file = script_dir / "hidlowAPI.py"
+
+        subprocess.Popen(
+            ["cmd", "/k", sys.executable, str(script_file)],
+            cwd=str(script_dir),
+            creationflags=subprocess.CREATE_NEW_CONSOLE
+        )
     except Exception as error_flask:
         print(f"{Fore.RED}HidlowAPI.py failed to start.\n\n{error_flask}")
 
 #troll
 def troll_open():
     try:
-        trolll_path = r"modules\troll\open_troll.bat"
-        os.startfile(trolll_path)
+        script_dir = Path(__file__).parent / "modules" / "troll"
+        script_file = script_dir / "trollhidlowCLI.py"
+
+        subprocess.Popen(
+            ["cmd", "/k", sys.executable, str(script_file)],
+            cwd=str(script_dir),
+            creationflags=subprocess.CREATE_NEW_CONSOLE
+        )
     except Exception as error_troll:
         print(f"{Fore.RED}trollhidlowCLI.py failed to start.\n\n{error_troll}")
 
