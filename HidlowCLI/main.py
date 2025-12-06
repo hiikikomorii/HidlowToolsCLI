@@ -1,6 +1,8 @@
+import ctypes
+import sys
+
 try:
     import json, urllib.request
-    import sys
     import random
     import requests
     import time
@@ -26,8 +28,13 @@ try:
     os.system("cls")
 
 except ModuleNotFoundError as e:
-    RED_EXCEPT_START = "\x1b[31m"
-    print(f"{RED_EXCEPT_START}Модуль {e.name} не найден.\nУстановите {e.name}")
+    if e.name == "modules.main_func":
+        ctypes.windll.user32.MessageBoxW(0, f"Сборка повреждена\nпуть {e.name} не найден\nПроверьте совместимость", "CLI FUNC", 0x10)
+        sys.exit()
+
+    ctypes.windll.user32.MessageBoxW(0, f"Модуль {e.name} не найден.\nУстановите нужный модуль\nи перезапустите сборку", "hidlowtoolsCLI-NoModule", 0x10)
+    sys.exit()
+
 keyboard = Controller()
 keyboard.press(Key.f11)
 keyboard.release(Key.f11)
